@@ -1,5 +1,5 @@
 // ====================================================
-//  EduLearn / UserApp - Node.js + PostgreSQL + Railway
+//  UserApp - Node.js + PostgreSQL + Railway
 //  Versi: Modern UI + Preview Gambar + Nomor Urut (ASC)
 // ====================================================
 
@@ -58,7 +58,7 @@ app.get('/', (req, res) => {
   res.send(`
   <html>
   <head>
-    <title>EduLearn Cloud | UserApp</title>
+    <title>UserApp</title>
     <style>
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -128,7 +128,7 @@ app.get('/', (req, res) => {
         <button type="submit">💾 Simpan</button>
       </form>
       <a href="/list">📄 Lihat Data Pengguna</a>
-      <footer>EduLearn Cloud © 2025</footer>
+      <footer>UserApp © 2025</footer>
     </div>
   </body>
   </html>
@@ -268,7 +268,7 @@ app.get('/list', async (req, res) => {
         </style>
       </head>
       <body>
-        <h2>📋 Daftar Pengguna EduLearn</h2>
+        <h2>📋 Daftar Pengguna </h2>
         <table>
           <tr>
             <th>No</th>
