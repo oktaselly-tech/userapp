@@ -10,17 +10,6 @@
 
 ---
 
-## Konsep PaaS yang Dipraktikkan
-
-| Konsep                   | Penjelasan                                               |
-| ------------------------ | -------------------------------------------------------- |
-| Managed Database         | PostgreSQL disediakan dan dikelola otomatis oleh Railway |
-| Environment Variable     | Menyimpan kredensial dan konfigurasi secara aman         |
-| Persistent Volume        | Menjamin file upload tidak hilang setelah redeploy       |
-| CI/CD GitHub Integration | Railway otomatis build dan deploy saat repo diperbarui   |
-
----
-
 ## Deskripsi Proyek
 
 UserApp adalah aplikasi web berbasis **Node.js + Express + PostgreSQL** yang di-deploy di **Railway.app**.  
@@ -196,3 +185,13 @@ Tabel menampilkan data pengguna dan file upload:
 
 ---
 
+## Konsep PaaS yang Dipraktikkan
+
+| Konsep                   | Penjelasan                                               |
+| ------------------------ | -------------------------------------------------------- |
+| Managed Database         | PostgreSQL disediakan dan dikelola otomatis oleh Railway |
+| Environment Variable     | Menyimpan kredensial dan konfigurasi secara aman         |
+| Persistent Volume        | Menjamin file upload tidak hilang setelah redeploy       |
+| CI/CD GitHub Integration | Railway otomatis build dan deploy saat repo diperbarui   |
+
+---
