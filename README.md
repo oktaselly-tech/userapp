@@ -1,5 +1,5 @@
 ```markdown
-# EduLearn Cloud / UserApp
+# UserApp
 **Platform as a Service (PaaS) — Node.js + PostgreSQL + Railway**
 
 **Nama:** Selly Okta Ramadhani  
@@ -10,9 +10,20 @@
 
 ---
 
+## Konsep PaaS yang Dipraktikkan
+
+| Konsep                   | Penjelasan                                               |
+| ------------------------ | -------------------------------------------------------- |
+| Managed Database         | PostgreSQL disediakan dan dikelola otomatis oleh Railway |
+| Environment Variable     | Menyimpan kredensial dan konfigurasi secara aman         |
+| Persistent Volume        | Menjamin file upload tidak hilang setelah redeploy       |
+| CI/CD GitHub Integration | Railway otomatis build dan deploy saat repo diperbarui   |
+
+---
+
 ## Deskripsi Proyek
 
-EduLearn Cloud / UserApp adalah aplikasi web berbasis **Node.js + Express + PostgreSQL** yang di-deploy di **Railway.app**.  
+UserApp adalah aplikasi web berbasis **Node.js + Express + PostgreSQL** yang di-deploy di **Railway.app**.  
 Aplikasi ini dirancang untuk mengelola data pengguna melalui formulir input, menyimpan data ke database PostgreSQL, serta mengunggah dan menampilkan file pengguna (termasuk gambar).
 
 Proyek ini merupakan implementasi pembelajaran **Platform as a Service (PaaS)**, dengan fokus pada integrasi database, environment variable, dan storage cloud.
@@ -185,37 +196,3 @@ Tabel menampilkan data pengguna dan file upload:
 
 ---
 
-## Konsep PaaS yang Dipraktikkan
-
-| Konsep                   | Penjelasan                                               |
-| ------------------------ | -------------------------------------------------------- |
-| Managed Database         | PostgreSQL disediakan dan dikelola otomatis oleh Railway |
-| Environment Variable     | Menyimpan kredensial dan konfigurasi secara aman         |
-| Persistent Volume        | Menjamin file upload tidak hilang setelah redeploy       |
-| CI/CD GitHub Integration | Railway otomatis build dan deploy saat repo diperbarui   |
-
----
-
-## Kriteria Penilaian
-
-| Aspek                      | Bobot | Keterangan                                              |
-| -------------------------- | ----- | ------------------------------------------------------- |
-| Koneksi Database           | 25%   | Aplikasi berhasil terhubung ke PostgreSQL               |
-| Konfigurasi Environment    | 20%   | `.env` dan Railway Variables dikonfigurasi dengan benar |
-| Fungsi CRUD & Upload File  | 25%   | Data berhasil disimpan dan ditampilkan                  |
-| Penyimpanan File Persisten | 15%   | File tetap tersimpan setelah redeploy                   |
-| Dokumentasi & Keamanan     | 15%   | README lengkap, kredensial aman                         |
-
----
-
-## Informasi Pengembang
-
-| Detail  | Keterangan               |
-| ------- | ------------------------ |
-| Nama    | Selly Okta Ramadhani     |
-| Kelas   | XII SIJA B               |
-| Nomor   | 26 / 21202               |
-| Proyek  | UserApp                  |
-| Tanggal | 07 Oktober 2025          |
-
----
