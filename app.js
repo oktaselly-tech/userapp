@@ -1,6 +1,6 @@
 // ====================================================
 //  EduLearn / UserApp - Node.js + PostgreSQL + Railway
-//  Versi: Modern UI + Preview Gambar + Nomor Urut
+//  Versi: Modern UI + Preview Gambar + Nomor Urut (ASC)
 // ====================================================
 
 require('dotenv').config();
@@ -190,10 +190,11 @@ app.post('/users', upload.single('file'), async (req, res) => {
   }
 });
 
-// 🔹 Halaman Daftar Pengguna (Nomor Urut + Preview Gambar)
+// 🔹 Halaman Daftar Pengguna (Urutan Lama ke Baru + Preview Gambar)
 app.get('/list', async (req, res) => {
   try {
-    const result = await pool.query('SELECT * FROM users ORDER BY id DESC');
+    // 🔄 Urutkan dari yang paling lama ke paling baru (ASC)
+    const result = await pool.query('SELECT * FROM users ORDER BY id ASC');
 
     let no = 1;
     let rowsHtml = '';
